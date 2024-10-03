@@ -17,6 +17,7 @@ Cet article explique comment créer un nouvel article sur mon blog en ligne. Pou
 1. Apprendre à écrire en markdwon
 2. Essayer d'importer une image
 3. Tester des prompts 
+---
 
 Try a photo:
 
