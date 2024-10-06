@@ -80,3 +80,4 @@ Afin de répondre aux besoins du MVP, le modèle objet du site doit être le sui
   "consumption": 56789
 }
 ````
+Fin du code
