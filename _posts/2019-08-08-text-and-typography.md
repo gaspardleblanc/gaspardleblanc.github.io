@@ -35,7 +35,7 @@ L'objectif est donc de miser sur la simplicité de remplissage des données et l
 - Les données OpenData disponibles à partir de la géolocalisation
 - Les données de la plateforme OPERAT à partir de la typologie d'activité
 
-![alt text] https://operat.ademe.fr/assets/img/AOPERAT_logo.webp
+Photo d'OPERAT
 
 ## Modèle objet
 
