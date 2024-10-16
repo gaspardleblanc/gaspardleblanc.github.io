@@ -2,15 +2,21 @@ const gridElement = document.getElementById('grid');
 const startButton = document.getElementById('start');
 const stopButton = document.getElementById('stop');
 const clearButton = document.getElementById('clear');
+const randomButton = document.getElementById('random');
 const themeToggle = document.getElementById('theme-toggle');
+const gridSizeInput = document.getElementById('grid-size');
+const speedInput = document.getElementById('speed');
 
-const rows = 30;
-const cols = 30;
+let rows = 30;
+let cols = 30;
 let grid = Array.from({ length: rows }, () => Array(cols).fill(false));
 let intervalId;
 
 function createGrid() {
     gridElement.innerHTML = '';
+    gridElement.style.gridTemplateColumns = `repeat(${cols}, 20px)`;
+    gridElement.style.gridTemplateRows = `repeat(${rows}, 20px)`;
+    
     for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
             const cell = document.createElement('div');
@@ -71,9 +77,15 @@ function updateGridDisplay() {
     });
 }
 
+function randomizeGrid() {
+    grid = Array.from({ length: rows }, () => Array.from({ length: cols }, () => Math.random() < 0.5));
+    updateGridDisplay();
+}
+
 startButton.addEventListener('click', () => {
     if (!intervalId) {
-        intervalId = setInterval(step, 100);
+        const speed = parseInt(speedInput.value) || 100;
+        intervalId = setInterval(step, speed);
     }
 });
 
@@ -87,8 +99,22 @@ clearButton.addEventListener('click', () => {
     updateGridDisplay();
 });
 
+randomButton.addEventListener('click', randomizeGrid);
+
 themeToggle.addEventListener('change', () => {
     document.body.classList.toggle('light-mode');
 });
 
+// Handle grid size changes
+gridSizeInput.addEventListener('change', () => {
+    const newSize = parseInt(gridSizeInput.value);
+    if (newSize >= 5 && newSize <= 50) {
+        rows = newSize;
+        cols = newSize;
+        grid = Array.from({ length: rows }, () => Array(cols).fill(false));
+        createGrid();
+    }
+});
+
+// Initialize the grid
 createGrid();
