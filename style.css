@@ -1,0 +1,43 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #121212; /* Dark mode background */
+    color: #ffffff; /* Dark mode text color */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(30, 20px);
+    grid-template-rows: repeat(30, 20px);
+    gap: 1px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff; /* Cell color */
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell.alive {
+    background-color: #000000; /* Alive cell color */
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: #ffffff; /* Light mode background */
+    color: #000000; /* Light mode text color */
+}
+
+body.light-mode .cell {
+    background-color: #000000; /* Cell color in light mode */
+    border: 1px solid #ccc;
+}
+
+body.light-mode .cell.alive {
+    background-color: #ffffff; /* Alive cell color in light mode */
+}
