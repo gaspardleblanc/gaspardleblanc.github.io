@@ -14,8 +14,8 @@ let intervalId;
 
 function createGrid() {
     gridElement.innerHTML = '';
-    gridElement.style.gridTemplateColumns = `repeat(${cols}, 20px)`;
-    gridElement.style.gridTemplateRows = `repeat(${rows}, 20px)`;
+    gridElement.style.gridTemplateColumns = `repeat(${cols}, 30px)`;
+    gridElement.style.gridTemplateRows = `repeat(${rows}, 30px)`;
     
     for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
