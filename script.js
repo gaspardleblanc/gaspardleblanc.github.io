@@ -14,8 +14,8 @@ let intervalId;
 
 function createGrid() {
     gridElement.innerHTML = '';
-    gridElement.style.gridTemplateColumns = `repeat(${cols}, 30px)`;
-    gridElement.style.gridTemplateRows = `repeat(${rows}, 30px)`;
+    gridElement.style.gridTemplateColumns = `repeat(${cols}, 20px)`;
+    gridElement.style.gridTemplateRows = `repeat(${rows}, 20px)`;
     
     for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
@@ -78,7 +78,7 @@ function updateGridDisplay() {
 }
 
 function randomizeGrid() {
-    grid = Array.from({ length: rows }, () => Array.from({ length: cols }, () => Math.random() < 0.5));
+    grid = Array.from({ length: rows }, () => Array.from({ length: cols }, () => Math.random() < 0.3));
     updateGridDisplay();
 }
 
@@ -108,7 +108,7 @@ themeToggle.addEventListener('change', () => {
 // Handle grid size changes
 gridSizeInput.addEventListener('change', () => {
     const newSize = parseInt(gridSizeInput.value);
-    if (newSize >= 5 && newSize <= 50) {
+    if (newSize >= 5 && newSize <= 100) {
         rows = newSize;
         cols = newSize;
         grid = Array.from({ length: rows }, () => Array(cols).fill(false));
