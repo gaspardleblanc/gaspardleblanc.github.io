@@ -13,8 +13,9 @@ mermaid: true
 
 ## 📍 Lieu & Informations Générales
 
-- **Lieu de départ :** [Nom du point de départ ou adresse GPS]
-- **Date :** [JJ/MM/AAAA]
+- **Lieu de départ :** Parking de Luminy
+- **Coordonnées GPS :** 43.2297541025158, 5.437045563174394
+- **Date :** 29/07/2025
 - **Durée estimée :** [X h XX min]
 - **Distance :** [X km]
 - **Dénivelé :** [+XXX m / -XXX m]
@@ -22,13 +23,14 @@ mermaid: true
 - **Type de parcours :** [Boucle / Aller-retour / Traversée]
 - **Conditions météo :** [Temps qu’il faisait]
 
+
+🚗 **[🧭 Aller au départ via Google Maps](https://www.google.com/maps/dir/?api=1&destination=43.229797,5.437043)**
+
 ---
 
 ## 🗺️ Carte interactive Komoot
 
 <iframe src="https://www.komoot.com/fr-fr/tour/2447040824/embed?share_token=aoUlp3f8b6X3QezLI0e3uUiwQcGOIpYXYo9XDJ6clIjDBqr26a&profile=1" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
-
-👉 [Voir la trace sur Komoot](https://www.komoot.com/tour/EXEMPLE)
 
 ---
 
