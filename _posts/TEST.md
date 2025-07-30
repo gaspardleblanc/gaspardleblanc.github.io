@@ -1,6 +1,6 @@
 ---
-title: TEST
-date: 2025-30-07 00:00:00
+title: TITLE
+date: YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: [TOP_CATEGORY, SUB_CATEGORY]
 tags: [TAG]     # TAG names should always be lowercase
 ---
